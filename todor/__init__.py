@@ -1,4 +1,5 @@
 from logging import DEBUG
+from . import todo, auth
 
 from flask import Flask
 
@@ -11,6 +12,10 @@ def create_app():
         DEBUG=True,
         SECRET_KEY='dev',
     )
+
+    #Registro de blueprints
+    app.register_blueprint(todo.bp)
+    app.register_blueprint(auth.bp)
 
     @app.route('/')
     def index():
