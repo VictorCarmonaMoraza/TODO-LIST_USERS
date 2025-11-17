@@ -1,0 +1,109 @@
+# ----------------------------------------
+# Entornos virtuales
+# ----------------------------------------
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ----------------------------------------
+# Archivos de Python
+# ----------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.sqlite3
+
+# Carpetas creadas por build/packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+
+# ----------------------------------------
+# Flask
+# ----------------------------------------
+instance/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Si usas dotenv
+.env
+*.env
+.env.*
+
+# ----------------------------------------
+# PyCharm / IntelliJ
+# ----------------------------------------
+.idea/
+*.iml
+
+# ----------------------------------------
+# Logs
+# ----------------------------------------
+logs/
+*.log
+*.out
+*.err
+
+# ----------------------------------------
+# Configuraciones y claves
+# ----------------------------------------
+config.py
+secret_*.json
+*.pem
+*.key
+
+# ----------------------------------------
+# Archivos temporales
+# ----------------------------------------
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ----------------------------------------
+# Docker
+# ----------------------------------------
+docker-compose.override.yml
+*.pid
+
+# ----------------------------------------
+# testing
+# ----------------------------------------
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.mypy_cache/
+
+# ----------------------------------------
+# Jupyter
+# ----------------------------------------
+.ipynb_checkpoints/
+*.ipynb
