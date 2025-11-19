@@ -19,3 +19,30 @@ def __init__(self, username, password):
 
 def __repr__(self):
     return f"<User: {self.username}>"
+
+
+##Este fichero sera nuestro fichero principal
+
+from todor import db
+
+
+# Crea clase para usuarios
+class Todo(db.Model):
+    id = db.Column(db.Integer, primary_key=True),
+    created_by = db.Column(db.Integer, db.Foreignkey('user.id'), nullable=False),
+    title = db.Column(db.String(100), nullable=False),
+    desc = db.Column(db.Text)
+    state = db.Column(db.Boolean, default=False)
+
+
+# constructor
+
+def __init__(self, created_by, title, desc, state=False):
+    self.created_by = created_by
+    self.title = title
+    self.desc = desc
+    self.state = state
+
+
+def __repr__(self):
+    return f"<User: {self.username}>"
